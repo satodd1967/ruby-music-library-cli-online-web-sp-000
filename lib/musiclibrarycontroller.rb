@@ -74,6 +74,8 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
       input2 = gets.strip
     end
+    
+    end
   end
   
   
