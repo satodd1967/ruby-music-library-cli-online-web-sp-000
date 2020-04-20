@@ -75,9 +75,9 @@ class MusicLibraryController
       input2 = gets.strip.to_i
     end
       if input > 0 && input <= Song.all.length
-        Song.all.sort_by! {|songs| songs.name}
-        new_array = Song.all.each.with_index {|songs, index| index == input2 - 1}
-        playing.each.with_index {|song| puts "Playing #{song.name} by #{song.artist.name}"}
+        new_array = Song.all.sort_by! {|songs| songs.name}
+        song = new_array[input2 - 1]
+        
       end
   end
   
