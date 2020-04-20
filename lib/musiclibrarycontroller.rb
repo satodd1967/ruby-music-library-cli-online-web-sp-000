@@ -72,7 +72,7 @@ class MusicLibraryController
   def play_song
     if input = "play song"
       puts "Which song number would you like to play?"
-      input2 = gets.strip
+      input2 = gets.strip.to_i
     end
       if input > 0 && input <= Song.all.length
         new_array = Song.all.sort_by! {|songs| songs.name}
@@ -80,6 +80,7 @@ class MusicLibraryController
         puts "Playing #{song.name} by #{song.artist.name}"
       end
   end
+end
   
   
 # binding.pry
