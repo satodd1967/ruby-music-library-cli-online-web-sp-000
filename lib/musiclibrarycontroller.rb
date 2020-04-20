@@ -72,11 +72,10 @@ class MusicLibraryController
   def play_song
     if input = "play song"
       puts "Which song number would you like to play?"
-      input2 = gets.strip - 1
-      input3 = input2 -1
+      input2 = gets.strip
     end
       Song.all.sort_by! {|songs| songs.name}
-      playing = Song.all.each.with_index {|songs, index| index == input3}
+      playing = Song.all.each.with_index {|songs, index| index == input2}
       playing.each.with_index {|song| puts "Playing #{song.name} by #{song.artist.name}"}
   end
   
