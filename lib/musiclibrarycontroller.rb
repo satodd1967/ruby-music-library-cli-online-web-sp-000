@@ -9,7 +9,7 @@ class MusicLibraryController
     MusicImporter.new(path).import
   end
   
-  def call
+  def caller
     
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
@@ -23,11 +23,8 @@ class MusicLibraryController
     
     input = gets.strip
     
-    if input == "list songs"
-      list_songs
-    else
-      input == "exit"
-        return "exit"
+    if input == "exit"
+      return "exit"
     end
     call
   end
