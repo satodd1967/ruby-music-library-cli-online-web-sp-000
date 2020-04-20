@@ -25,6 +25,8 @@ class MusicLibraryController
     
     if input == "exit"
       return "exit"
+    elsif input == "list songs"
+      list_songs
     end
     call
   end
