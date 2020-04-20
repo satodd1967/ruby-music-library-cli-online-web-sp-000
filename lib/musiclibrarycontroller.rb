@@ -74,9 +74,8 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
       input2 = gets.strip
     end
-      array = Song.all.sort_by! {|songs| songs.name}
-      
-      
+      sort_array = Song.all.sort_by! {|songs| songs.name}
+      playing = sort_array[]
       # playing = array.all.each.with_index {|songs, index| index == input2}
       # playing.each.with_index {|song| puts "Playing #{song.name} by #{song.artist.name}"}
   end
