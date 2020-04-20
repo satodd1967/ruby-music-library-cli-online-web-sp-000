@@ -79,7 +79,6 @@ class MusicLibraryController
       playing.each.with_index {|song| puts "Playing #{song.name} by #{song.artist.name}"}
     end
   end
-end
   
   
 # binding.pry
