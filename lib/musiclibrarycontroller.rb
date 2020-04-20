@@ -26,6 +26,8 @@ class MusicLibraryController
     if input == "exit"
       return "exit"
       
+    list_songs
+      
     end
     call
   end
