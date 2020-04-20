@@ -25,9 +25,6 @@ class MusicLibraryController
     
     if input == "exit"
       return "exit"
-      
-  
-      
     end
     call
   end
